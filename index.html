@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>SIBS form</title>
-    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" type="text/css" href="styles/css.css">
 </head>
 
 
 <body>
 	<div class="header">
-		<img class="m5" src="sibs_logo.png" width="250px" height="60">
+		<img class="m-lt-10" src="img/sibs_logo.png" width="250px" height="60">
 	</div>
     <div class="content">
-    	<div class="m50">
-    		<input type="text" id="transactionId" name="" placeholder="transactionId"></p>
-    		<input type="text" id="formContext" name="" placeholder="formContext"></p>
-    		<input type="submit" onclick="callForm();" name="">
+    	<div class="form">
+    		<div class="dTxt1 m2"><input class="txt1" type="text" id="transactionId" name="" placeholder="transactionId"></p></div>
+    		<div class="dTxt1 m2"><textarea class="txt1" style="height:120px" id="formContext" name="" placeholder="formContext"></textarea></p></div>
+    		<div class="dBtn1"><input class="btn1" type="submit" onclick="callForm();" name=""></div>
     	</div>
     </div>
-    <div id="testcard"></div>
+    <div class="content2">
+    	<div id="testcard"></div>
+	</div>
+    
 
 </body>
 
@@ -31,7 +34,6 @@
 
     function callForm() {
     	transactionId = document.getElementById("transactionId").value;
-    	alert(transactionId);
     	formContext = document.getElementById("formContext").value;
      	addFormToDOM();
         addScript();
