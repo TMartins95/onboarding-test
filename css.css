@@ -1,0 +1,26 @@
+body{
+	padding: 0;
+	margin: 0;
+	
+}
+
+m1{
+	margin-left: 20px;
+	padding: 2px;
+}
+m5{
+	margin-left: 5px;
+	margin-top: 5px;
+}
+m50{
+	margin-left: 50px;
+}
+#header{
+	background-color: #d3d3d3;
+	width: 100%;
+	height: 40px;
+}
+#content{
+	width: 100%;
+	height: auto;
+}
